@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Container {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Your variable overrides - https://v4-alpha.getbootstrap.com/getting-started/options/#global-options
+$body-bg: #dbe1e6;
+$body-color: #565656;
+
+/* make the customizations */
+$theme-colors: (
+  'primary': #337ab7,
+  'secondary': #7da4c6,
+  'success': #5cb85c,
+  'info': #5bc0de,
+  'warning': #f0ad4e,
+  'danger': #d9534f,
+  'light': #dbe1e6,
+  'dark': #565656,
+);
+
+.EasterEggCursor {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤔</text></svg>")
+      16 0,
+    auto;
+}
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
