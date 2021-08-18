@@ -1,1 +1,1 @@
-# How to Build and Publish native Mobile Application (with Flutter)
+# How to Build and Publish Native Mobile Application (with Flutter)
