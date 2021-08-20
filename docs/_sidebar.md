@@ -1,4 +1,4 @@
-**Mobile Application**
+**Native Mobile**
 
 **How to work with**
 
