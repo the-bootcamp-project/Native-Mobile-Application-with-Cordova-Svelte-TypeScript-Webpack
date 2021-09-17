@@ -1,27 +1,36 @@
 {
   "name": "native-mobile-tbcp",
-  "version": "0.0.1",
-  "license": "MIT",
-  "description": "ASD",
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
+	"version": "0.0.1",
+	"license": "MIT",
+	"private": true,
+	"description": "How to Build and Publish Native Mobile Application with Cordova Svelte TypeScript Webpack",
+	"keywords": [
+		"How to",
+		"Build",
+		"Publish",
+		"Native",
+    "Mobile",
+    "Application",
+		"Cordova",
+		"Svelte",
+		"TypeScript",
+		"Webpack",
+		"Boilerplate",
+		"Step-by-Step"
+	],
+	"repository": "https://gitlab.com/the-bootcamp-project/boilerplates/native-mobile.git",
   "author": "Bootcamp contributors <contributors@bootcamp-project.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/the-bootcamp-project/boilerplates/native-mobile"
-  },
   "contributors": [
     "John Ollhorn <john@ollhorn.de> (https://ollhorn.de)"
   ],
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"IE 10"
+	],
   "scripts": {
     "start": "node index.js"
   },
-	"browserslist": [
-		"defaults"
-	],
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
@@ -38,5 +47,9 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
+  },
+  "dependencies": {
+		"concurrently": "^6.2.1",
+		"cross-env": "^7.0.3"
   }
 }
