@@ -1,9 +1,8 @@
 # Getting Start
 
 ```bash
+cordova telemetry off
 cordova create boilerplate
-
-cd boilerplate/
 ```
 
 ```bash
@@ -21,4 +20,8 @@ cordova platform add android
 
 ```bash
 cordova run android
+```
+
+```bash
+yes | sdkmanager --licenses
 ```

@@ -1,5 +1,6 @@
 {
-  "name": "native-mobile-tbcp",
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
 	"version": "0.0.1",
 	"license": "MIT",
 	"private": true,
@@ -28,28 +29,20 @@
 		"> 1%",
 		"IE 10"
 	],
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "babel-loader": "^8.2.2",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.2.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "mini-css-extract-plugin": "^2.2.0",
-    "style-loader": "^3.2.1",
-    "svelte": "^3.42.1",
-    "svelte-loader": "^3.1.2",
-    "ts-loader": "^9.2.5",
-    "typescript": "^4.3.5",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0"
+    "cordova-android": "^9.1.0",
+    "cordova-plugin-whitelist": "^1.3.4"
   },
-  "dependencies": {
-		"concurrently": "^6.2.1",
-		"cross-env": "^7.0.3"
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }

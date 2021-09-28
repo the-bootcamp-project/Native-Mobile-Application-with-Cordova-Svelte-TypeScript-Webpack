@@ -64,14 +64,3 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 ## 🏆 Acknowledgements 🏆
 
 Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Native Mobile Application with Cordova Svelte TypeScript Webpack**:
-
-- [Cordova](https://cordova.apache.org/#getstarted)
-- [beevelop/android-nodejs](https://hub.docker.com/r/beevelop/android-nodejs)
-- [Building Cordova apps using Docker Images](https://swaminathanvetri.in/2016/12/24/building-cordova-apps-using-docker-images/)
-- [Build Android apps with Debian: apt install android-sdk](https://bits.debian.org/2017/03/build-android-apps-with-debian.html)
-- [Docker as a Cordova Android application builder](https://medium.com/@cnadeau_/docker-as-a-cordova-android-application-builder-9e292298c08e)
-- [mib200/node-android-cordova-build-box](https://github.com/mib200/node-android-cordova-build-box/blob/master/Dockerfile)
-- [hamdifourati/cordova-android-builder](https://github.com/hamdifourati/cordova-android-builder)
-- [How to install Android SDK on Ubuntu?](https://stackoverflow.com/questions/34556884/how-to-install-android-sdk-on-ubuntu)
-- ["sdkmanager: command not found" after installing Android SDK](https://stackoverflow.com/questions/53994924/sdkmanager-command-not-found-after-installing-android-sdk)
-- [Purik/android-studio-docker](https://github.com/Purik/android-studio-docker/blob/master/Dockerfile)
