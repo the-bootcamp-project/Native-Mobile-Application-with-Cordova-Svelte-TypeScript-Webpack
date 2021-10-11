@@ -1,6 +1,6 @@
 <a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/images/logo.png" align="right" height="200" /></a>
 
-<h1 align="center">How to Build and Publish Native Mobile Application with Cordova Svelte TypeScript Webpack</h1>
+<h1 align="center">How to Build and Publish Native Mobile Application with Ionic Svelte TypeScript Webpack</h1>
 
 <div align="center">
 <img src="https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge" />
@@ -63,4 +63,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 🏆 Acknowledgements 🏆
 
-Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Native Mobile Application with Cordova Svelte TypeScript Webpack**:
+Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Native Mobile Application with Ionic Svelte TypeScript Webpack**:

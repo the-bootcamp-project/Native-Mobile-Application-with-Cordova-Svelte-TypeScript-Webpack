@@ -3,6 +3,9 @@
 ## Android Studio
 
 - [Android Studio](https://developer.android.com/studio#command-tools)
+- [Environment variables](https://developer.android.com/studio/command-line/variables.html#android_sdk_root)
+- [Purik/android-studio-docker](https://github.com/Purik/android-studio-docker/blob/master/Dockerfile)
+- [Deadolus/android-studio-docker](https://github.com/Deadolus/android-studio-docker/blob/master/Dockerfile)
 
 ## Android-SDK
 
@@ -18,4 +21,21 @@
 
 ## Android Emulator
 
+<!-- panels:start -->
+
+<!-- div:left-panel -->
+
+- [antonienko/android-emulator](https://github.com/antonienko/android-emulator/blob/master/Dockerfile)
 - [Android Emulator Error](https://forum.ionicframework.com/t/android-emulator-error/430)
+- [Can't start Android AVD Emulator](https://stackoverflow.com/questions/53305032/cant-start-android-avd-emulator)
+- [Update Your Path For The New Android Emulator Location](https://www.stkent.com/2017/08/10/update-your-path-for-the-new-android-emulator-location.html)
+- [Android Emulator Error Message: "PANIC: Missing emulator engine program for 'x86' CPUS."](https://stackoverflow.com/questions/26483370/android-emulator-error-message-panic-missing-emulator-engine-program-for-x86/49511666#49511666)
+- [Emulator on Android Studio doesn't start after SDK tools update to 25.3.1](https://stackoverflow.com/questions/42659272/emulator-on-android-studio-doesnt-start-after-sdk-tools-update-to-25-3-1)
+
+<!-- div:right-panel -->
+
+```bash
+${ANDROID_SDK_ROOT}/emulator/emulator -version
+```
+
+<!-- panels:end -->

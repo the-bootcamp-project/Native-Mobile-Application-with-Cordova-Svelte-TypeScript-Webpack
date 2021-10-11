@@ -11,12 +11,13 @@
 - [docker-android-sdk/ubuntu/standalone/Dockerfile](https://github.com/mindrunner/docker-android-sdk/blob/master/ubuntu/standalone/Dockerfile)
 - [vgaidarji/docker-android-cordova](https://github.com/vgaidarji/docker-android-cordova)
 - [bitrise-io/android](https://github.com/bitrise-io/android)
-- [Purik/android-studio-docker](https://github.com/Purik/android-studio-docker/blob/master/Dockerfile)
 - [slaszu/docker-cordova-android](https://github.com/slaszu/docker-cordova-android/blob/master/Dockerfile)
 - [beevelop/android-nodejs](https://hub.docker.com/r/beevelop/android-nodejs)
 - [mib200/node-android-cordova-build-box](https://github.com/mib200/node-android-cordova-build-box/blob/master/Dockerfile)
 - [hamdifourati/cordova-android-builder](https://github.com/hamdifourati/cordova-android-builder)
-- [antonienko/android-emulator](https://github.com/antonienko/android-emulator/blob/master/Dockerfile)
+
+## Oudated
+
 - [Building Cordova apps using Docker Images](https://swaminathanvetri.in/2016/12/24/building-cordova-apps-using-docker-images/)
 - [Docker as a Cordova Android application builder](https://medium.com/@cnadeau_/docker-as-a-cordova-android-application-builder-9e292298c08e)
 
