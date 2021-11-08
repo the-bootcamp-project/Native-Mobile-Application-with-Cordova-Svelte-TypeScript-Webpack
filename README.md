@@ -16,6 +16,10 @@
 
 ### ✋ Prerequisites ✋
 
+```bash
+export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
+```
+
 **Change the project-specific attributes.** See [TODO](TODO.md) for more information.
 
 ### 💪 Installation 💪
