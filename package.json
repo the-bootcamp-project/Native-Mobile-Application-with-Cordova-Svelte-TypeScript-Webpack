@@ -26,13 +26,15 @@
 		"defaults"
 	],
 	"scripts": {
-		"dev": "webpack serve --node-env development --mode development --config webpack.webapp.ts",
+		"dev-all": "webpack serve --node-env development --mode development",
 		"********": "--------------------------------------------------------------------------------------------------------------",
-		"bundle": "webpack --node-env production --mode production --config webpack.webapp.ts --progress --no-hot --no-watch",
-		"sync": "npx cap sync",
-		"android": "npx cap open android",
+		"bundle": "webpack --node-env production --mode production --progress --no-hot --no-watch",
 		"*******": "--------------------------------------------------------------------------------------------------------------",
-		"measure-bundle": "webpack --node-env production --mode production --config webpack.webapp.ts --progress --no-hot --no-watch --profile --json > stats.json && webpack-bundle-analyzer stats.json",
+		"sync": "npx cap sync",
+		"run": "npx cap run",
+		"android": "npx cap open android",
+		"****** ": "--------------------------------------------------------------------------------------------------------------",
+		"measure-bundle": "webpack --node-env production --mode production --progress --no-hot --no-watch --profile --json > stats.json && webpack-bundle-analyzer stats.json",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
@@ -79,6 +81,11 @@
 		"webpack-merge": "^5.8.0"
 	},
 	"dependencies": {
+		"@bootcamp-project/svelte-components": "^0.0.18",
+		"@bootcamp-project/tailwind-config": "^0.0.8",
+		"@bootcamp-project/typescript-config": "^0.0.15",
+		"@bootcamp-project/webext-config": "^0.0.5",
+		"@bootcamp-project/webpack-config": "^0.0.9",
 		"@capacitor/android": "^3.3.1",
 		"@capacitor/core": "^3.3.1",
 		"@capacitor/device": "^1.0.6",

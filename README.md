@@ -17,7 +17,11 @@
 ### ✋ Prerequisites ✋
 
 ```bash
+sudo yarn global add @ionic/cli native-run --prefix /usr/local
+
 export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
+export ANDROID_SDK_ROOT="/home/stroke/Android/Sdk/"
+export ANDROID_AVD_HOME="/home/stroke/.android/avd/"
 ```
 
 **Change the project-specific attributes.** See [TODO](TODO.md) for more information.
