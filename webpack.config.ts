@@ -1,5 +1,5 @@
 import { default as path } from 'path'
-import Webpack from 'webpack'
+import type Webpack from 'webpack'
 import type WebpackDev from 'webpack-dev-server'
 import CopyPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
@@ -21,12 +21,23 @@ const TEMPLATES_DIR = path.resolve(SRC_DIR,'templates')
 const mode = process.env['NODE_ENV'] ?? 'development'
 const isProduction = mode === 'production'
 
-const config: Configuration = {
+const DEV_CSP = {
+    'script-src': [
+        "'self'",
+        "'unsafe-eval'"
+    ],
+    'style-src': ["'self'"]
+}
+const PROD_CSP = {
+    'script-src': ["'self'"],
+    'style-src': ["'self'"]
+}
+const CSP = isProduction ? PROD_CSP : DEV_CSP
+
+const mobile: Configuration = {
     context:    path.resolve(__dirname),
 
-    node:       false,
 	mode:       isProduction ? 'production' : 'development',
-    watch:      isProduction ? false: true,
 	devtool:    isProduction ? 'source-map' : 'eval-source-map',
 	target:     'browserslist',
 
@@ -38,8 +49,9 @@ const config: Configuration = {
 
     resolve: {
         modules: [path.join(__dirname, 'node_modules')],
-        extensions: ['.ts','.js','.json'],
-        mainFields: ['browser','module','main'],
+        alias: { svelte: path.resolve(DEP_DIR,'svelte') },
+        extensions: ['.mjs','.ts','.js','.json','.svelte'],
+        mainFields: ['svelte','browser','module','main'],
         fallback: {
             util: false,
             path: false,
@@ -71,7 +83,7 @@ const config: Configuration = {
     },
 
     entry: {
-        /* Extension App Pages */
+        /* Desktop App Pages */
         index: path.resolve(PAGES_DIR,'Index.ts'),
     },
 
@@ -111,17 +123,13 @@ const config: Configuration = {
         /* Application Pages */
         new HtmlWebpackPlugin({ title: 'index',  filename: 'index.html', template: path.resolve(TEMPLATES_DIR,'default.html'), chunks:['index'] }),
         /* Generate Content Security Policy Meta Tags */
-        new CspHtmlWebpackPlugin({ 'script-src': '', 'style-src': '' }),
+        new CspHtmlWebpackPlugin(CSP),
         new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: 'style.css' }),
         new CopyPlugin({ patterns: [
-            /* Copy i18n */
+            /* Copy _locales */
             { from: path.resolve('i18n'), to: path.resolve(BUNDLE_DIR,'i18n'), force: true }
         ] }),
         new ForkTsCheckerWebpackPlugin({ eslint: { files: './src/**/*.{ts,js}' } }),
-        // fix "process is not defined" error: (do "npm install process" before running the build)
-        new Webpack.ProvidePlugin({
-            process: 'process/browser'
-        })
     ],
     devServer: {
         historyApiFallback: true,
@@ -134,4 +142,4 @@ const config: Configuration = {
 
 // This interface combines configuration from `webpack` and `webpack-dev-server`. You can add or override properties in this interface to change the config object type used above.
 export interface Configuration extends Webpack.Configuration, WebpackDev.Configuration {}
-export default config;
+export default mobile;

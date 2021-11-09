@@ -17,7 +17,7 @@
 ### ✋ Prerequisites ✋
 
 ```bash
-sudo yarn global add @ionic/cli native-run --prefix /usr/local
+sudo yarn global add @ionic/cli native-run cordova-res --prefix /usr/local
 
 export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
 export ANDROID_SDK_ROOT="/home/stroke/Android/Sdk/"
@@ -29,6 +29,9 @@ export ANDROID_AVD_HOME="/home/stroke/.android/avd/"
 ### 💪 Installation 💪
 
 ## 🚀 Usage 🚀
+
+ionic info
+native-run android --sdk-info
 
 ### 🤓 Static Analysis 🤓
 

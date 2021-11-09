@@ -26,8 +26,7 @@
 		"defaults"
 	],
 	"scripts": {
-		"dev-all": "webpack serve --node-env development --mode development",
-		"********": "--------------------------------------------------------------------------------------------------------------",
+		"dev": "webpack serve --node-env development --mode development",
 		"bundle": "webpack --node-env production --mode production --progress --no-hot --no-watch",
 		"*******": "--------------------------------------------------------------------------------------------------------------",
 		"sync": "npx cap sync",
@@ -84,7 +83,6 @@
 		"@bootcamp-project/svelte-components": "^0.0.18",
 		"@bootcamp-project/tailwind-config": "^0.0.8",
 		"@bootcamp-project/typescript-config": "^0.0.15",
-		"@bootcamp-project/webext-config": "^0.0.5",
 		"@bootcamp-project/webpack-config": "^0.0.9",
 		"@capacitor/android": "^3.3.1",
 		"@capacitor/core": "^3.3.1",
