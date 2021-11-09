@@ -20,8 +20,15 @@
 sudo yarn global add @ionic/cli native-run cordova-res --prefix /usr/local
 
 export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
-export ANDROID_SDK_ROOT="/home/stroke/Android/Sdk/"
-export ANDROID_AVD_HOME="/home/stroke/.android/avd/"
+export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+export ANDROID_AVD_HOME="$HOME/.android/avd"
+
+# avdmanager, sdkmanager
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+# adb, logcat
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 ```
 
 **Change the project-specific attributes.** See [TODO](TODO.md) for more information.
