@@ -27,35 +27,15 @@
 
 ---
 
-### 😎 Built With 😎
+## 🚀 Getting Started 🚀
 
-## 📖 Getting Started 📖
+_For more examples, please refer to the [Documentation](https://frameworks.bootcamp-project.com)_
 
 ### ✋ Prerequisites ✋
-
-```bash
-sudo yarn global add @ionic/cli native-run cordova-res --prefix /usr/local
-
-export CAPACITOR_ANDROID_STUDIO_PATH="/opt/android-studio/bin/studio.sh"
-export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
-export ANDROID_AVD_HOME="$HOME/.android/avd"
-
-# avdmanager, sdkmanager
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
-# adb, logcat
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-# emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-```
-
-**Change the project-specific attributes.** See [TODO](TODO.md) for more information.
 
 ### 💪 Installation 💪
 
 ## 🚀 Usage 🚀
-
-ionic info
-native-run android --sdk-info
 
 ### 🤓 Static Analysis 🤓
 
@@ -65,9 +45,15 @@ native-run android --sdk-info
 
 ### 🥳 Deployment 🥳
 
-_For more examples, please refer to the [Documentation](https://native-mobile.rtfm.page)_
-
 ## ⭐️ Features ⭐️
+
+### 😎 Built With 😎
+
+- [Webpack](https://webpack.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Svelte](https://svelte.dev/)
+- [IPFS](https://ipfs.io/)
+- [docsify](https://docsify.js.org/)
 
 ## 📑 Changelog 📑
 
@@ -75,22 +61,17 @@ See [CHANGELOG](CHANGELOG) for more information.
 
 ## 📋 Roadmap 📋
 
-See the [open issues](https://gitlab.com/the-bootcamp-project/boilerplates/native-mobile/-/issues) for a list of proposed features (and known issues).
+See the [open issues](https://gitlab.com/groups/the-bootcamp-project/frameworks/-/issues) for a list of proposed features (and known issues).
 
 ## 🤝 Contribute 🤝
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Please read the [contribution guidelines](docs/_media/code_of_conduct.md) first.
-2. Fork the Project
-3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the Branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
 
 ## 📜 License 📜
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+See [LICENSE](https://frameworks.bootcamp-project.com/#/LICENSE) for more information.
 
 ## 💌 Contact 💌
 
@@ -98,4 +79,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 🏆 Acknowledgements 🏆
 
-Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Native Mobile Application with Ionic Svelte TypeScript Webpack**:
+Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Modern Application Frameworks**:
