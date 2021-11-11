@@ -49,6 +49,7 @@ _For more examples, please refer to the [Documentation](https://frameworks.bootc
 
 ### 😎 Built With 😎
 
+- [Using Capacitor with Ionic Framework](https://capacitorjs.com/docs/getting-started/with-ionic)
 - [Webpack](https://webpack.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svelte](https://svelte.dev/)
@@ -80,3 +81,5 @@ See [LICENSE](https://frameworks.bootcamp-project.com/#/LICENSE) for more inform
 ## 🏆 Acknowledgements 🏆
 
 Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Modern Application Frameworks**:
+
+- [Using Capacitor with Ionic Framework](https://capacitorjs.com/docs/getting-started/with-ionic)
