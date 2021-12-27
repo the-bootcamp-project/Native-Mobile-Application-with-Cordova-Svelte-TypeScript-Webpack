@@ -1,7 +1,6 @@
 import { default as path } from 'path'
 import type Webpack from 'webpack'
 import type WebpackDev from 'webpack-dev-server'
-import CopyPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import CspHtmlWebpackPlugin from 'csp-html-webpack-plugin'
@@ -125,10 +124,6 @@ const mobile: Configuration = {
         /* Generate Content Security Policy Meta Tags */
         new CspHtmlWebpackPlugin(CSP),
         new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: 'style.css' }),
-        new CopyPlugin({ patterns: [
-            /* Copy _locales */
-            { from: path.resolve('i18n'), to: path.resolve(BUNDLE_DIR,'i18n'), force: true }
-        ] }),
         new ForkTsCheckerWebpackPlugin({ eslint: { files: './src/**/*.{ts,js}' } }),
     ],
     devServer: {
