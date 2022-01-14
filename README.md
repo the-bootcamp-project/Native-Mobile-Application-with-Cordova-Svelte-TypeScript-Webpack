@@ -90,6 +90,12 @@ sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt install android-studio
 ```
 
+and
+
+```bash
+sudo yarn global add cross-env --prefix /usr/local
+```
+
 **Get the Boilerplate**
 
 > *Boilerplate for new projects only, as a contributor please scroll down to: 🤝 Contribute 🤝*
