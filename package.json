@@ -63,6 +63,7 @@
 		"testing": "*********************************************************************************************************",
 		"test:audit": "yarn audit fix",
 		"test:smoke:android": "cross-env ANDROID_SDK_ROOT='$HOME/Android/Sdk/' CAPACITOR_ANDROID_STUDIO_PATH='/opt/android-studio-2020.3.1/android-studio/bin/studio.sh' npx cap run android --sdk-info",
+		"test:smoke:web": "cd ./build && http-server -o ./index.html",
 		"test:webpack": "webpack configtest",
 		"test:coverage": "yarn test:unit --coverage",
 		"test:unit": "jest",
