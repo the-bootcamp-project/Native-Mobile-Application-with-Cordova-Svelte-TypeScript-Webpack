@@ -47,7 +47,7 @@
 		"android:sync": "cross-env ANDROID_SDK_ROOT='$HOME/Android/Sdk/' CAPACITOR_ANDROID_STUDIO_PATH='/opt/android-studio-2020.3.1/android-studio/bin/studio.sh' npx cap sync",
 		"cleaning": "********************************************************************************************************",
 		"clean:cache": "yarn cache clean",
-		"clean": "rm -rf node_modules build dist artifacts temp coverage yarn.lock yarn*.log stats.json",
+		"clean": "rm -rf node_modules android build dist artifacts temp coverage yarn.lock yarn*.log stats.json",
 		"installation": "****************************************************************************************************",
 		"install:android": "npx cap add android",
 		"develop": "*********************************************************************************************************",
